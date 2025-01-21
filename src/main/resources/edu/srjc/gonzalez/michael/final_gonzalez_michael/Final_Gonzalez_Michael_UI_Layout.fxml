@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #228B22;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.srjc.gonzalez.michael.final_gonzalez_michael.Final_Gonzalez_Michael_UI_Controller">
+   <children>
+      <ImageView fx:id="ivPunterCard1" fitHeight="100.0" fitWidth="70.0" layoutX="182.5" layoutY="458.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivPunterCard0" fitHeight="100.0" fitWidth="70.0" layoutX="100.0" layoutY="458.0" onMouseClicked="#ivPunterCard0_Click" pickOnBounds="true" preserveRatio="true" />
+      <MenuBar layoutY="2.0" style="-fx-background-color: #e6e6fa; -fx-border-style: hidden hidden solid hidden;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="mnuGameInformation" mnemonicParsing="false" onAction="#mnuGameInformation_Click" text="Game Information" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="ivPunterCard2" fitHeight="100.0" fitWidth="70.0" layoutX="265.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivPunterCard3" fitHeight="100.0" fitWidth="70.0" layoutX="347.5" layoutY="458.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivPunterCard4" fitHeight="100.0" fitWidth="70.0" layoutX="430.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivBankerCard4" fitHeight="100.0" fitWidth="70.0" layoutX="100.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivBankerCard3" fitHeight="100.0" fitWidth="70.0" layoutX="182.5" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivBankerCard2" fitHeight="100.0" fitWidth="70.0" layoutX="265.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivBankerCard1" fitHeight="100.0" fitWidth="70.0" layoutX="347.5" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivBankerCard0" fitHeight="100.0" fitWidth="70.0" layoutX="430.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivDeck" fitHeight="100.0" fitWidth="70.0" layoutX="100.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnHit" layoutX="244.5" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#btnHit_Click" prefHeight="45.0" prefWidth="111.0" text="Hit">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Text layoutX="425.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Bet:" wrappingWidth="79.0">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Label fx:id="lblWallet" alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="383.0" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-color: silver; -fx-border-width: 2px;" text="15" />
+      <Label fx:id="lblTotalBet" alignment="CENTER" contentDisplay="CENTER" layoutX="430.0" layoutY="383.0" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-color: silver; -fx-border-width: 2px;" text="5" />
+      <Button fx:id="btnStand" layoutX="389.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#btnStand_Click" prefHeight="45.0" prefWidth="111.0" text="Stand">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnBetAmount" layoutX="244.5" layoutY="363.0" mnemonicParsing="false" onMouseClicked="#btnBetAmount_Click" prefHeight="45.0" prefWidth="111.0" text="Double Down">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Text layoutX="108.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wallet:" wrappingWidth="60.0703125">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <ImageView fx:id="ivDeck1" fitHeight="100.0" fitWidth="70.0" layoutX="102.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivDeck2" fitHeight="100.0" fitWidth="70.0" layoutX="104.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivDeck3" fitHeight="100.0" fitWidth="70.0" layoutX="106.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="85.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="415.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
